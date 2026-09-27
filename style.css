@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: auto;
+    width: 100%;
+
+    }
+
+.loadingCon {
+    background-color: #101112;
+    color: white;
+
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingCon .mesg {
+    font-size: 40px;
+}
+
+.emptyStateCon , .errorCon, .errorStateCon{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        gap: 20px;
+margin-top: 50px ;
+}
+
+.emptyStateCon img, .errorCon img,.errorStateCon img {
+    height: auto;
+    width: 350px;
+    color: black;
+}
+
+.emptyStateMsg, .errorMsg, .errorStateMsg {
+font-size: 25px;
+text-align: center;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    padding: 10px;
+}
+
+
+.logo{
+    height: 32px;
+    width:65px;
+}
+
+.searchCon{
+     display: flex;
+    align-items: center;
+    width: 450px;
+    background-color: #fff;
+    padding: 5px 10px;
+
+    border-radius: 10px;
+}
+
+.searchInput{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.searchBtn{
+    border: none;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(126, 123, 123);
+    font-size: 16px;
+}
+
+
+
+.movieShow{
+    background-color: #fff;
+        display: flex;
+            align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.titleHeading{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.cardCon{
+        display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 550px;
+}
+
+.Card{
+display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+
+
+    border-bottom: 1px solid black;
+    padding: 10px
+}
+
+.Title{
+    font-size: 18px;
+}
+.moviePoster{
+        height: 150px;
+    width: 140px;
+    border-radius: 10px;
+}
+
+.informationCon{
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+
+.yearTypeCon{
+        display: flex;
+    gap: 20px;
+ font-size: 14px;
+     color: #726d6d;
+}
+
+.runtime{
+    color: #726d6d;
+}
+
+
+.noPoster{
+    height: 150px;
+    width: 140px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+ .moviePoster{
+    cursor: pointer;
+}
+
+
+
+.detailsBody{
+      min-height: 100vh;
+      width: 100%;
+  margin: 0;
+
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px 0;
+
+background: linear-gradient( to bottom, #01232e 50%,  #2b3e63 100%);
+}
+
+
+.detailsCard{
+    padding: 20px;
+    width: 850px;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    border: 1px solid #594d4d;
+    border-radius: 20px;
+    background-color: #101112;
+    }
+
+.imgPoster{
+    height: 380px;
+    width: 380px;
+    border-radius: 20px;
+}
+
+
+.inf{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        gap: 30px;
+}
+
+.detailTitle{
+                text-align: center;
+        color: white;
+}
+
+.timeCon{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+.detailRate, .detailGenre{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+}
+
+.plotCon{
+margin: 20px;
+padding: 10px;
+border-bottom: 0.5px solid white;
+height: auto;
+width: 850px;
+
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.detailPlot{
+font-size: 18px;
+text-align: center;
+color: #fff;
+}
+
+.plotHeading{
+    color: #ffff;
+    font-size: 32px;
+}
+
+.rateCon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+.rateHeading{
+    font-size: 20px;
+ color: #fff;
+    text-transform: uppercase
+}    
+
+
+.otherInf{
+        display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 850px;
+    
+    margin: 20px;
+padding: 10px;
+}
+
+.otherInf .heading{
+    color: #fff;
+    font-size: 18.77px;
+    font-weight: 800;
+     }
+
+     
+ .director, .writer, .actors{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 0.5px solid white;
+    padding: 10px;
+ }
+
+
+ .directorName, .writerName, .actorsName{
+    color: #508edf;
+    font-size: 18px;
+ }
+
+ .details{
+          display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 850px;
+    
+    margin: 20px;
+padding: 10px;
+
+    color: white;
+ }
+
+
+ .headingDetail, .headingCredit {
+        font-size: 32px;
+        color: white;
+ }
+
+ .releaseDate, .country, .lang, .award{
+    display: flex;
+    align-items:center ;
+    gap: 50px;
+    border-bottom:  0.5px solid white;
+    padding: 5px;
+    
+ }
+
+  .releaseDate p, .country p, .lang p, .award p{
+         color: #508edf;
+    font-size: 18px;
+  }
+
+  .releaseDate span, .country span, .lang span, .award span{
+         color: #508edf;
+    font-size: 18.77px;
+    color: white;
+    font-weight: 800;
+  }
+
+
+  .detailNoposterCon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+  }
+
+  .detailNoposterIcon{
+    font-size: 50px;
+  }
+
+  .detailNoposterText{
+    font-size: 30px;
+    color: black;
+  }
+
+
+.noPosterImage{
+height: 350px;
+    width: 380px;
+border-radius: 20px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* position: absolute → normal layout flow se hata deta hai
+width: 1px; height: 1px → practically invisible size
+overflow: hidden → content bahar nahi dikhega
+clip → visible area ko effectively hide karta hai
+margin: -1px → unwanted space avoid karta hai */
+
+
+
+a:focus-visible {
+  outline: 2px dotted;
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+

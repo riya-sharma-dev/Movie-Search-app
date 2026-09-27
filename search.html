@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+  name="description"
+  content="Search for movies and explore their titles, release dates, and ratings."
+>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Search Movies | Movie Search App</title>
+</head>
+<body>
+
+
+      <div class="loadingCon">
+        <div class = "mesg">Loading...</div>
+    </div>
+    
+
+
+    <header>
+<div class="navBar">
+<img src="logo.png" alt="IMBd logo" class="logo">
+
+    <div class="searchCon">
+        <label for="movieType" class="visually-hidden"  >Search for a movie</label>
+        <input id = 'movieType' type="text" placeholder="Search IMDb" class="searchInput">
+
+        <button aria-label="Search" type="button" class="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+    </div>
+</div>
+
+</header>
+
+
+<div class="emptyStateCon">
+    <img src="empty state.jpg" alt="empty state illustration" >
+    <p class="emptyStateMsg" aria-live="polite"></p>
+</div>
+
+<div class="errorCon">
+    <img src="not found state.png" alt=" not found state illustration" >
+    <p class="errorMsg" aria-live="polite"></p>
+</div>
+
+<div class="errorStateCon">
+    <img src="error-state.jpg" alt="error state illustration" >
+    <p class="errorStateMsg" aria-live="polite"></p>
+</div>
+
+
+<main>
+    
+<div class="movieShow">
+    
+<h1 class="headingValue"></h1>
+<span class="titleHeading"></span>
+
+<div class="cardCon"></div>
+
+</div>
+
+</main>
+
+<script src="search.js"></script>
+</body>
+
+</html>
